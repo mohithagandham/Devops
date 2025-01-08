@@ -1,4 +1,5 @@
-function validateForm(event) {
+function validateForm(event) 
+{
     event.preventDefault(); 
     const fullName = document.querySelector('input[placeholder="Enter Name"]');
     const username = document.querySelector('input[placeholder="Enter Username"]');
@@ -10,23 +11,28 @@ function validateForm(event) {
     const usernameRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{10,}$/;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const phoneRegex = /^[0-9]+$/;
-    if (!nameRegex.test(fullName.value)) {
+    if (!nameRegex.test(fullName.value))
+    {
         alert("Full Name must be less than or equal to 15 characters and contain only alphabets.");
         return;
     }
-    if (!usernameRegex.test(username.value)) {
+    if (!usernameRegex.test(username.value))
+     {
         alert("Username must be at least 10 characters long and contain both alphabets and numbers.");
         return;
     }
-    if (!emailRegex.test(email.value)) {
+    if (!emailRegex.test(email.value)) 
+    {
         alert("Please enter a valid email address.");
         return;
     }
-    if (!phoneRegex.test(phone.value)) {
+    if (!phoneRegex.test(phone.value)) 
+    {
         alert("Phone Number must contain only numbers.");
         return;
     }
-    if (password.value !== confirmPassword.value) {
+    if (password.value !== confirmPassword.value) 
+    {
         alert("Passwords do not match.");
         return;
     }

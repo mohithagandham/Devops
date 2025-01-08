@@ -5,7 +5,8 @@
     font-family: 'Poppins', sans-serif;
   }
   
-  body {
+  body 
+  {
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -14,7 +15,8 @@
     background: lightgrey;
   }
   
-  .container {
+  .container 
+  {
     max-width: 700px;
     width: 100%;
     background-color:whitesmoke;
@@ -23,13 +25,15 @@
     box-shadow:black;
   }
   
-  .container .title {
+  .container .title
+  {
     font-size: 25px;
     font-weight: 500;
     position: relative;
   }
   
-  .container .title::before {
+  .container .title::before 
+  {
     content: "";
     position: absolute;
     left: 0;
@@ -40,14 +44,16 @@
     background:lavenderblush;
   }
   
-  .content form .user-details {
+  .content form .user-details 
+  {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 20px 0 12px 0;
   }
   
-  form .user-details .input-box {
+  form .user-details .input-box 
+  {
     margin-bottom: 15px;
     width: calc(100% / 2 - 20px);
   }
